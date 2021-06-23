@@ -1,0 +1,139 @@
+/* setting background and global values */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bree Serif', serif;
+    font-weight: 200;
+    user-select: none;
+}
+/* designing a container to hold the form */
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.outer-box{
+    width: 500px;
+    height: 650px;
+    background:white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    text-align: center;
+   
+}
+h1{
+    font-weight: 350;
+    font-size: 24px;
+    padding: 15px 0;
+    background: linear-gradient(to right, #bc4e9c, #f80759);
+    color: aliceblue;
+    border-radius: 20px 20px 0 0;
+  
+
+}
+.form{
+    width: 100%;
+}
+
+.field{
+    width: 100%;
+    margin: 18px auto;
+}
+input,textarea{
+    margin: 0 8px;
+    padding: 3px 5px;
+    border: 3px inset whitesmoke;
+    border-radius: 10px;
+    user-select: initial;
+    resize: none;
+    
+}
+select{
+    margin: 0 8px;
+    border: 3px outset whitesmoke;
+    border-radius: 10px;
+    padding: 3px 5px;
+
+}
+::placeholder{
+    color: white;
+    font-size:13px ;
+    font-weight: lighter;
+}
+
+
+
+/* adding hover effects */
+:hover::placeholder{
+    color: rgb(156, 156, 156);
+}
+.button{
+    margin: 2px 8px;
+    padding: 5px 10px;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color:transparent;
+    width: 70px;
+    position: relative;
+   
+
+}
+.button:hover{
+    background: linear-gradient(to right, #bc4e9c, #f80759);
+    color: white;
+    cursor: pointer;
+    transform: translateY(3px);
+   
+
+}
+input:valid:not(.button){
+color: #089404;
+}
+input:invalid{
+    color: rgb(233, 0, 0);
+}
+
+
+
+
+/* responsive design */
+@media(max-width:800px){
+    *{
+        font-size: 14px;
+    }
+    .outer-box{
+        width: 330px;
+        height: 500px;
+    }
+    h1{
+        font-size: 17px;
+        padding: 8px 0;
+    }
+    .field{
+        margin: 10px auto;
+    }
+    input,textarea{
+        padding: 1px 3px;
+        margin: 0 5px;
+        border: 2px inset whitesmoke;
+    }
+    .button{
+        padding: 2px 5px;
+        width: 60px;
+        margin-top: 10px;
+
+    }
+    select{
+        border: 2px outset whitesmoke;
+    }
+    
+  
+
+}
