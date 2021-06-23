@@ -53,6 +53,7 @@ input,textarea{
     border-radius: 10px;
     user-select: initial;
     resize: none;
+    font-family: Courier, monospace;
     
 }
 select{
@@ -60,6 +61,18 @@ select{
     border: 3px outset whitesmoke;
     border-radius: 10px;
     padding: 3px 5px;
+
+}
+.button{
+    margin: 2px 8px;
+    padding: 5px 10px;
+    border: 3px solid black;
+    border-radius: 20px;
+    background-color:transparent;
+    width: 70px;
+    position: relative;
+    font-family: 'Bree Serif', serif;
+   
 
 }
 ::placeholder{
@@ -74,17 +87,7 @@ select{
 :hover::placeholder{
     color: rgb(156, 156, 156);
 }
-.button{
-    margin: 2px 8px;
-    padding: 5px 10px;
-    border: 3px solid black;
-    border-radius: 20px;
-    background-color:transparent;
-    width: 70px;
-    position: relative;
-   
 
-}
 .button:hover{
     background: linear-gradient(to right, #bc4e9c, #f80759);
     color: white;
@@ -93,12 +96,18 @@ select{
    
 
 }
+
+
 input:valid:not(.button){
 color: #089404;
 }
 input:invalid{
     color: rgb(233, 0, 0);
 }
+input:focus,select:focus,textarea:focus{
+    outline: none;
+}
+
 
 
 

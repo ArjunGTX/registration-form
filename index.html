@@ -19,7 +19,7 @@
         <div class="outer-box">
             <h1>REGISTRATION FORM</h1>
             <div class="form">
-                <form action="">
+                <form action="" method="POST">
                     <div class="field">
                         <label for="user">User Id :</label>
                         <input type="text" name="user-id" id="user" placeholder="Enter the User Id" pattern=".{5,12}"
@@ -69,20 +69,19 @@
 
                     <div class="field">
                         <label for="sex">Sex :</label>
-                        <input type="radio" name="gender" id="sex" value="Male">Male
-                        <input type="radio" name="gender" id="sex" value="Female">Female
+                        <input type="radio" name="gender" id="sex" value="Male" required>Male
+                        <input type="radio" name="gender" id="sex" value="Female" required>Female
                     </div>
 
                     <div class="field">
                         <label for="lang">Language :</label>
-                        <input type="checkbox" name="language" id="lang" value="English">English
+                        <input type="checkbox" name="language" id="lang" value="English" required>English
                         <input type="checkbox" name="language" id="lang" value="Non English">Non English
                     </div>
 
                     <div class="field">
                         <label for="about">About :</label>
-                        <textarea name="about" id="about" cols="30" rows="3" placeholder="Describe yourself."
-                            draggable="false"></textarea>
+                        <textarea name="about" id="about" cols="30" rows="3" placeholder="Describe yourself."></textarea>
                     </div>
 
                     <div class="field">
