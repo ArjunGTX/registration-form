@@ -19,7 +19,7 @@
         <div class="outer-box">
             <h1>REGISTRATION FORM</h1>
             <div class="form">
-                <form action="" method="POST">
+                <form>
                     <div class="field">
                         <label for="user">User Id :</label>
                         <input type="text" name="user-id" id="user" placeholder="Enter the User Id" pattern=".{5,12}"
@@ -34,7 +34,7 @@
 
                     <div class="field">
                         <label for="name">Name :</label>
-                        <input type="text" name="name" id="name" placeholder="Enter the Name" pattern="[A-Za-z]{1,}"
+                        <input type="text" name="name" id="name" placeholder="Enter the Name" pattern="[A-Za-z\s]{1,}"
                             title="Name can contain alphabets only.!" required>
                     </div>
 
